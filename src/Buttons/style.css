@@ -1,3 +1,19 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    color: teal;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    transition: 0.6s;
+    padding: 4px;
+    margin: 0px;
+    margin-left: 0px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+
 .section__buttons {
     color: teal;
     background: #fff;
@@ -20,10 +36,10 @@
 }
 
 @media(max-width: 767px) {
+
     .section__buttons {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 1px;
-        margin-top: 0px;
+        flex-basis: 100%;
+        margin: 10px;
+        padding-left: 8px;
     }
 }
