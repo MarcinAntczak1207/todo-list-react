@@ -13,7 +13,6 @@
     cursor: pointer;
 }
 
-
 .section__buttons {
     color: teal;
     background: #fff;
@@ -28,7 +27,7 @@
 }
 
 .section__buttons:hover {
-    color: hsl(180, 100%, 32%);
+    color: hsl(180, 100%, 50%);
 }
 
 .section__buttons:disabled {
