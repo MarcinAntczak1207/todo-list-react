@@ -2,8 +2,8 @@ import React from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
-import SectionTasks from "./SectionTasks";
-import SectionForm from "./SectionForm";
+import TaskSection from "./TaskSection";
+import FormSection from "./FormSection";
 import Header from "./Header";
 import Container from "./Container"
 
@@ -17,11 +17,11 @@ function App() {
   return (
     <Container>
       <Header title="Lista zadań" />
-      <SectionForm
+      <FormSection
         title="Dodaj nowe zadanie"
         body={<Form />}
       />
-      <SectionTasks
+      <TaskSection
         title="Lista zadań"
         body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
         extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
